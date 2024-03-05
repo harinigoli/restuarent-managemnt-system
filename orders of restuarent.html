@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="restuarent_management_system.css">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System </h1>
+    </header>
+    
+    
+
+    <section id="orderManagement">
+        <h2>Order Management</h2>
+        <ul>
+            <li><a href="#" id="viewOrders">View Orders</a></li>
+            <li><a href="#" id="addOrder">Add New Order</a></li>
+            <li><a href="#" id="updateOrder">Update Order</a></li>
+            <li><a href="#" id="deleteOrder">Delete Order</a></li>
+        </ul>
+    </section>
+
+    <section id="currentOrders" style="display: none;">
+        <h2>Current Orders</h2>
+        <ul>
+            <li>Order 1 - <a href="#">Details</a> | <a href="#">Update</a> | <a href="#">Delete</a></li>
+            <li>Order 2 - <a href="#">Details</a> | <a href="#">Update</a> | <a href="#">Delete</a></li>
+            <!-- Add more current orders here -->
+        </ul>
+    </section>
+
+    <section id="completedOrders" style="display: none;">
+        <h2>Completed Orders</h2>
+        <ul>
+            <li>Order 3 - <a href="#">Details</a> | <a href="#">Reorder</a></li>
+            <li>Order 4 - <a href="#">Details</a> | <a href="#">Reorder</a></li>
+            <!-- Add more completed orders here -->
+        </ul>
+
+    </section>
+
+    <script>
+        // Add your JavaScript logic here
+        document.getElementById('viewOrders').addEventListener('click', function() {
+            document.getElementById('orderManagement').style.display = 'none';
+            document.getElementById('currentOrders').style.display = 'block';
+            document.getElementById('completedOrders').style.display = 'block';
+            // You can fetch and display orders dynamically here
+        });
+
+        document.getElementById('addOrder').addEventListener('click', function() {
+            // Logic to add a new order
+        });
+
+        document.getElementById('updateOrder').addEventListener('click', function() {
+            // Logic to update an order
+        });
+
+        document.getElementById('deleteOrder').addEventListener('click', function() {
+            // Logic to delete an order
+        });
+    </script>
+</body>
+</html>

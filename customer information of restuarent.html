@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    
+    
+
+    <section id="customerManagement">
+        <h2>Customer Information Management</h2>
+        <ul>
+            <li><a href="#" id="viewCustomers">View Customers</a></li>
+            <li><a href="#" id="addCustomer">Add New Customer</a></li>
+            <li><a href="#" id="updateCustomer">Update Customer Information</a></li>
+            <li><a href="#" id="deleteCustomer">Delete Customer</a></li>
+        </ul>
+    </section>
+
+    <section id="customerList" style="display: none;">
+        <h2>Customer List</h2>
+        <ul id="customerList">
+            <!-- Customer details will be dynamically added here -->
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('viewCustomers').addEventListener('click', function() {
+            document.getElementById('customerManagement').style.display = 'none';
+            document.getElementById('customerList').style.display = 'block';
+            // Fetch and display customer details here
+        });
+
+        document.getElementById('addCustomer').addEventListener('click', function() {
+            // Logic to add a new customer
+        });
+
+        document.getElementById('updateCustomer').addEventListener('click', function() {
+            // Logic to update customer information
+        });
+
+        document.getElementById('deleteCustomer').addEventListener('click', function() {
+            // Logic to delete a customer
+        });
+    </script>
+</body>
+</html>

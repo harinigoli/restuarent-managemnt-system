@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="restuarent_management_system.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+    </header>
+    
+    <section id="reservationManagement">
+        <h2>Reservation Management</h2>
+        <ul>
+            <li><a href="#" id="viewReservations">View Reservations</a></li>
+            <li><a href="#" id="addReservation">Add New Reservation</a></li>
+            <li><a href="#" id="updateReservation">Update Reservation</a></li>
+            <li><a href="#" id="cancelReservation">Cancel Reservation</a></li>
+        </ul>
+    </section>
+
+    <section id="currentReservations" style="display: none;">
+        <h2>Current Reservations</h2>
+        <ul id="currentReservationList">
+            <!-- Current reservations will be dynamically added here -->
+        </ul>
+    </section>
+
+    <script>
+        // Add your JavaScript logic here
+        document.getElementById('viewReservations').addEventListener('click', function() {
+            document.getElementById('reservationManagement').style.display = 'none';
+            document.getElementById('currentReservations').style.display = 'block';
+            // You can fetch and display reservations dynamically here
+        });
+
+        document.getElementById('addReservation').addEventListener('click', function() {
+            // Logic to add a new reservation
+        });
+
+        document.getElementById('updateReservation').addEventListener('click', function() {
+            // Logic to update a reservation
+        });
+
+        document.getElementById('cancelReservation').addEventListener('click', function() {
+            // Logic to cancel a reservation
+        });
+    </script>
+</body>
+</html>

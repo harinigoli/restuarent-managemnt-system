@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="restuarent_management_system.css">
+    <style>
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 300px; /* Adjusted width to accommodate the image */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu-content a {
+            display: block;
+            color: black;
+            padding: 12px 0;
+            text-decoration: none;
+        }
+
+        .menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .menu-item img {
+            width: 60px;  /* Adjust the size of the image as needed */
+            height: 70px; /* Adjust the size of the image as needed */
+            margin-right: 10px;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button-container button {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Management System <p>click the menu list below to order your favourite food</p></h1>
+    </header>
+    <nav>
+        <div class="menu-dropdown">
+            <button class="menu-btn" onclick="toggleMenu()">Menu Items</button>
+            <div class="menu-content" id="menuContent">
+                <div class="menu-item">
+                    <img src="restuarent img 1.jpg" alt="Biryani"><br><br>
+                    <span>Biryani - $10</span>
+                    <div class="button-container">
+                        <button onclick="orderNow()">Order Now</button>
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div><br><br>
+                </div>
+                <div class="menu-item">
+                    <img src="restuarent img 2.jpg" alt="Biryani Combo"><br><br>
+                    <span>Biryani Combo - $15</span>
+                    <div class="button-container">
+                        <button onclick="orderNow()">Order Now</button>
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div><br><Br>
+                    <div class="menu-item">
+                        <img src="restuarent img 5.jpg" alt="button nan"><br><br>
+                        <span>butter nan - $30</span>
+                        <div class="button-container">
+                            <button onclick="orderNow()">Order Now</button>
+                            <button onclick="addToCart()">Add to Cart</button>
+                        </div><br><br>
+                        <div class="menu-item">
+                            <img src="restuarent img 6.jpg" alt="kaju curry"><br><br>
+                            <span>kaju curry - $50</span>
+                            <div class="button-container">
+                                <button onclick="orderNow()">Order Now</button>
+                                <button onclick="addToCart()">Add to Cart</button>
+                            </div><br><Br>
+                            <div class="menu-item">
+                                <img src="restuarent img 7.jpg" alt="chicken"><br><br>
+                                <span>chicken - $40</span>
+                                <div class="button-container">
+                                    <button onclick="orderNow()">Order Now</button>
+                                    <button onclick="addToCart()">Add to Cart</button>
+                                </div><br><br>
+                                <div class="menu-item">
+                                    <img src="restuarent img 8.avif" alt="burger"><br><br>
+                                    <span>Burger - $30</span>
+                                    <div class="button-container">
+                                        <button onclick="orderNow()">Order Now</button>
+                                        <button onclick="addToCart()">Add to Cart</button>
+                                    </div><br><br>
+                                    <div class="menu-item">
+                                        <img src="restuarent img 9.jpg" alt="Bmanchuria"><br><br>
+                                        <span>manchuria - $60</span>
+                                        <div class="button-container">
+                                            <button onclick="orderNow()">Order Now</button>
+                                            <button onclick="addToCart()">Add to Cart</button>
+                                        </div><br><br>
+                                        <div class="menu-item">
+                                            <img src="restuarent img 10.jpg" alt="fried rice"><br><br>
+                                            <span>fried rice - $50</span>
+                                            <div class="button-container">
+                                                <button onclick="orderNow()">Order Now</button>
+                                                <button onclick="addToCart()">Add to Cart</button>
+                                            </div>
+                </div>
+                <!-- Repeat the same structure for other menu items -->
+            </div>
+        </div>
+        
+    
+
+    
+    <script>
+        function toggleMenu() {
+            var menuContent = document.getElementById("menuContent");
+            if (menuContent.style.display === "block") {
+                menuContent.style.display = "none";
+            } else {
+                menuContent.style.display = "block";
+            }
+        }
+
+        function orderNow() {
+            // Logic for ordering now
+            alert("Order Now clicked");
+        }
+
+        function addToCart() {
+            // Logic for adding to cart
+            alert("Add to Cart clicked");
+        }
+    </script>
+</body>
+</html>
